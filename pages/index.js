@@ -30,6 +30,7 @@ export default function Home() {
         onChange={(e) => setPrompt(e.target.value)}
         style={{ width: "300px", padding: "10px" }}
       />
+
       <button onClick={generate} style={{ marginLeft: "10px" }}>
         Generate
       </button>
@@ -38,7 +39,7 @@ export default function Home() {
 
       {image && (
         <div style={{ marginTop: 20 }}>
-          <img src={image} alt="Result" width="512" />
+          <img src={image} alt="Generated" width="512" />
         </div>
       )}
     </div>
