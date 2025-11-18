@@ -35,7 +35,7 @@ export default async function handler(req, res) {
       image: `data:image/png;base64,${base64}`
     });
   } catch (error) {
-    console.error("SERVER ERROR:", error);
-    return res.status(500).json({ error: "Server crashed" });
+    console.error("Server error:", error);
+    return res.status(500).json({ error: "Server crashed." });
   }
 }
