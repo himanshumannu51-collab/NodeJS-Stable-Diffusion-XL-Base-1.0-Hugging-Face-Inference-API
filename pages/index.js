@@ -34,7 +34,7 @@ export default function Home() {
         Generate
       </button>
 
-      {loading && <p>Generating...</p>}
+      {loading && <p>Generating image…</p>}
 
       {image && (
         <div style={{ marginTop: 20 }}>
